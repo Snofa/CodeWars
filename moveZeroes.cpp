@@ -12,6 +12,9 @@ std::vector<int> move_zeroes(const std::vector<int>& input) {
         if (zero != result.end()){
             result.erase(zero);
             result.push_back(0);
+        }else
+        {
+            break;
         }
     }
     return  result;
